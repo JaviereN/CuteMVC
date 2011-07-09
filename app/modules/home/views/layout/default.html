@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		{% block head %}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="{{ constant('URL') }}/css/layout.css" type="text/css" media="all" />
+        <title>{% block title page_title|title %}</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+		{% endblock %}
+    </head>
+    <body>
+        <div id="layout-wrapper">
+            <div id="layout-header">
+				{% block page_header %}{% endblock %}
+            </div>
+            <div class="layout-content">
+				{% block content %}{% endblock %}
+            </div>
+		</div>
+    </body>
+</html>
