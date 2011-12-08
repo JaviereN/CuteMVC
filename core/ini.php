@@ -3,7 +3,7 @@
  * Logica MVC
  */
 
-$profiler = new PhpQuickProfiler(TIMESTART);
+//$profiler = new PhpQuickProfiler(TIMESTART);
 
 Config::parseConfig(APP . '/config/config.ini');
 
@@ -37,6 +37,6 @@ MVC::setController(Router::$_module,
 MVC::run(Router::$_action,
 		 Router::$_parameters);
 
-$profiler->display();
+//$profiler->display();
 //Profiler::display();
 ?>
